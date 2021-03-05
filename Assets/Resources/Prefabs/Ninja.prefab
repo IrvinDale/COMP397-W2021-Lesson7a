@@ -1189,7 +1189,7 @@ Transform:
   m_GameObject: {fileID: 4024264102331860695}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0.7071068, w: 0}
   m_LocalPosition: {x: 0, y: 1.89, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3482328817668328709}
   m_RootOrder: 2
@@ -1446,11 +1446,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.25
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 10
+  m_Acceleration: 10
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 2
+  m_AngularSpeed: 300
+  m_StoppingDistance: 4
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -1472,6 +1472,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasLOS: 0
   player: {fileID: 0}
+  attackDistance: 3.8
+  playerBehaviour: {fileID: 0}
+  damageDelay: 0.5
+  isAttacking: 0
+  kickForce: 500
+  distanceToPlayer: 0
 --- !u!1 &4776972006876734077
 GameObject:
   m_ObjectHideFlags: 0
